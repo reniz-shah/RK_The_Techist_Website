@@ -81,7 +81,7 @@ const Footer = () => {
           {/* ── Col 1 · Identity ── */}
           <motion.div variants={itemVariants} className="flex flex-col gap-6">
             {/* Logo */}
-            <a href="/" title="RK The Techist - Home" className="inline-block w-fit">
+            <a href="./" title="RK The Techist - Home" className="inline-block w-fit">
               <img
                 src={getImgPath('/images/logo/white-RK_logo.png')}
                 alt="RK The Techist agency logo"
@@ -245,7 +245,7 @@ const Footer = () => {
           {/* Legal / AI-crawler links */}
           <nav aria-label="Legal and AI crawler links" className="flex items-center gap-5">
             <a
-              href="/privacy-policy"
+              href="./privacy-policy"
               title="Read the RK The Techist privacy policy"
               className="text-xs text-slate-600 hover:text-slate-400 transition-colors duration-150"
             >
@@ -253,7 +253,7 @@ const Footer = () => {
             </a>
             <span aria-hidden="true" className="w-px h-3 bg-white/10" />
             <a
-              href="/terms"
+              href="./terms"
               title="Read the RK The Techist terms of service"
               className="text-xs text-slate-600 hover:text-slate-400 transition-colors duration-150"
             >
@@ -261,7 +261,7 @@ const Footer = () => {
             </a>
             <span aria-hidden="true" className="w-px h-3 bg-white/10" />
             <a
-              href="/llms.txt"
+              href="./llms.txt"
               title="Plain-text site index for AI language model crawlers"
               rel="nofollow"
               className="text-xs text-slate-600 hover:text-slate-400 transition-colors duration-150 flex items-center gap-1"
