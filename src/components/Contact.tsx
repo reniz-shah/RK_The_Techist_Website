@@ -59,8 +59,8 @@ async function dispatchEmails(form: ContactFormState): Promise<void> {
 
   /** Shared template variables */
   const templateParams = {
-    client_name: form.name,
-    client_email: form.email,
+    name: form.name,
+    email: form.email,
     // project_type: form.projectType,
     description: form.description,
   };

@@ -1,4 +1,3 @@
-import React from 'react';
 import Blobs from './components/Blobs';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -8,6 +7,7 @@ import Specialization from './components/Specialization';
 import Projects from './components/Projects';
 import Process from './components/Process';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
       <Process />
       <Specialization />
       <Contact />
+      <Footer />
     </div>
   );
 }

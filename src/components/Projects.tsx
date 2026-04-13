@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 
