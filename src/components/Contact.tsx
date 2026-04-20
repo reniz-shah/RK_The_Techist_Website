@@ -293,6 +293,7 @@ const Contact: React.FC = () => {
                   />
                 </div>
 
+
                 {/* Project Type — custom dropdown */}
                 {/* <div className="relative" ref={dropdownRef}>
                   <FieldLabel htmlFor="contact-project-type">Project Type</FieldLabel>
