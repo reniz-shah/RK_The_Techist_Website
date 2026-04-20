@@ -13,7 +13,6 @@ jobs:
   build-and-deploy:
     name: Build & Deploy
     runs-on: ubuntu-latest
-    environment: github-pages
 
     steps:
       # ── 1. Checkout source ─────────────────────────────────────────────────
@@ -32,8 +31,9 @@ jobs:
         run: npm ci
 
       # ── 4. Inject secrets as env vars for the build ────────────────────────
-      #       EmailJS keys: repository secrets and/or Environment secrets for
-      #       `github-pages` (see `environment:` on this job). Names must match below.
+      #       VITE_* must be Repository secrets (Settings → Secrets → Actions).
+      #       Do not use `environment: github-pages` here: that environment is
+      #       protected and often rejects workflows from `main`.
       - name: Build production bundle
         env:
           VITE_BASE_URL: ''
