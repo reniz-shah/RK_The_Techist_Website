@@ -6,11 +6,7 @@ const Counter = ({ value, suffix = "" }: { value: number, suffix?: string }) => 
   const inView = useInView(ref, { once: true, margin: "-100px" });
   
   const motionValue = useMotionValue(0);
-  const springValue = useSpring(motionValue, {
-    damping: 50,
-    stiffness: 70,
-    restDelta: 0.001
-  });
+  const springValue = useSpring(motionValue);
 
   useEffect(() => {
     if (inView) {
@@ -38,11 +34,11 @@ const Impact = () => {
   ];
 
   return (
-    <section className="relative w-full border-y border-white/5 overflow-hidden py-24 z-10 mt-10">
+    <section className="relative w-full border-y border-white/5 overflow-hidden py-14 sm:py-18 md:py-24 z-10 mt-8 md:mt-10">
       <div className="absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent pointer-events-none" />
       
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-6 divide-y md:divide-y-0 md:divide-x divide-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-6 divide-y md:divide-y-0 md:divide-x divide-white/10">
           {metrics.map((metric, idx) => (
             <motion.div 
               key={idx} 
@@ -50,12 +46,12 @@ const Impact = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className={`flex flex-col items-center md:items-start pt-8 md:pt-0 ${idx !== 0 ? 'md:pl-12 lg:pl-20' : ''} first:pt-0`}
+              className={`flex flex-col items-center text-center md:text-left md:items-start py-6 sm:py-8 md:py-0 ${idx !== 0 ? 'md:pl-12 lg:pl-20' : ''} first:pt-0 md:first:pt-0`}
             >
-               <div className="text-6xl md:text-7xl font-bold tracking-tighter text-white mb-4 flex items-center font-mono">
+               <div className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter text-white mb-3 sm:mb-4 flex items-center font-mono leading-none">
                  <Counter value={metric.value} suffix={metric.suffix} />
                </div>
-               <p className="text-[#A1A1AA] text-[13px] uppercase tracking-widest font-medium max-w-[200px] leading-relaxed">
+               <p className="text-[#A1A1AA] text-[11px] sm:text-[12px] md:text-[13px] uppercase tracking-[0.18em] font-medium max-w-[240px] md:max-w-[200px] leading-relaxed">
                  {metric.label}
                </p>
             </motion.div>

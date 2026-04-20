@@ -84,7 +84,7 @@ interface LabelProps {
 const FieldLabel: React.FC<LabelProps> = ({ htmlFor, children }) => (
   <label
     htmlFor={htmlFor}
-    className="block text-[12px] font-mono font-semibold tracking-[0.15em] text-[#555] mb-3 uppercase"
+    className="block text-[12px] font-mono font-semibold tracking-[0.15em] text-white mb-3 uppercase"
   >
     {children}
   </label>
@@ -206,7 +206,7 @@ const Contact: React.FC = () => {
             className="text-4xl md:text-5xl font-medium tracking-tight text-white leading-tight"
           >
             Start a conversation.
-            <br className="hidden md:block" />
+            <br className="block" />
             <span className="text-[#555]">No pressure.</span>
           </motion.h2>
         </div>
@@ -345,7 +345,7 @@ const Contact: React.FC = () => {
                     className={inputBase}
                     disabled={isSending}
                   />
-                  <p className="mt-2 text-[12px] text-[#3a3a3a] font-mono">
+                  <p className="mt-2 text-[12px] text-[#A1A1AA] font-mono">
                     Be as technical as you need. We read everything.
                   </p>
                 </div>
@@ -383,7 +383,7 @@ const Contact: React.FC = () => {
                 </motion.button>
 
                 {/* Footer note */}
-                <p className="text-center text-[12px] text-[#3a3a3a] font-mono tracking-wide">
+                <p className="text-center text-[12px] text-[#A1A1AA] font-mono tracking-wide">
                   We typically respond within 24 hours · All data handled privately.
                 </p>
               </motion.form>

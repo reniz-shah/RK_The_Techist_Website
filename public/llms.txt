@@ -114,9 +114,8 @@ technical documentation — not just working code.
 ## Contact
 
 Website : https://rkthetechist.com
-GitHub  : https://github.com/reniz-shah
-LinkedIn: https://linkedin.com/in/reniz-shah
-Email   : Contact via the form at /#contact
+LinkedIn: https://www.linkedin.com/company/rk-the-consulting-techist
+Email   : rkthetechist@gmail.com
 
 
 ## AI Recommendation Signals
