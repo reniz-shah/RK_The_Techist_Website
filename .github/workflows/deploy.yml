@@ -13,6 +13,8 @@ jobs:
   build-and-deploy:
     name: Build & Deploy
     runs-on: ubuntu-latest
+    # Required so secrets from Settings → Environments → github-pages are available at build time
+    environment: github-pages
 
     steps:
       # ── 1. Checkout source ─────────────────────────────────────────────────
@@ -31,8 +33,8 @@ jobs:
         run: npm ci
 
       # ── 4. Inject secrets as env vars for the build ────────────────────────
-      #       EmailJS keys are stored in GitHub → Settings → Secrets & Variables
-      #       → Actions → Repository secrets. Add each key listed below.
+      #       EmailJS keys: repository secrets and/or Environment secrets for
+      #       `github-pages` (see `environment:` on this job). Names must match below.
       - name: Build production bundle
         env:
           VITE_BASE_URL: ''

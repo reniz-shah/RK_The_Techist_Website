@@ -57,6 +57,12 @@ async function dispatchEmails(form: ContactFormState): Promise<void> {
   const founderTemplateId = import.meta.env.VITE_EMAILJS_FOUNDER_TEMPLATE_ID as string;
   // const clientTemplateId = import.meta.env.VITE_EMAILJS_CLIENT_TEMPLATE_ID as string;
 
+  if (!publicKey?.trim() || !serviceId?.trim() || !founderTemplateId?.trim()) {
+    throw new Error(
+      'Email is not configured for this build. Ensure VITE_EMAILJS_PUBLIC_KEY, VITE_EMAILJS_SERVICE_ID, and VITE_EMAILJS_FOUNDER_TEMPLATE_ID are set when running npm run build (e.g. GitHub Actions with the correct environment secrets).'
+    );
+  }
+
   /** Shared template variables */
   const templateParams = {
     name: form.name,
@@ -171,7 +177,13 @@ const Contact: React.FC = () => {
       setForm(INITIAL_STATE);
     } catch (err) {
       console.error('[Contact] Email dispatch failed:', err);
-      setErrorMsg('Something went wrong — please email us directly.');
+      const isConfig =
+        err instanceof Error && err.message.includes('Email is not configured');
+      setErrorMsg(
+        isConfig
+          ? err.message
+          : 'Something went wrong — please email us directly.'
+      );
       setSubmitState('error');
     }
   };
