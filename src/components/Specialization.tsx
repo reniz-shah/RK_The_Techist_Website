@@ -21,7 +21,7 @@ const Specialization = () => {
           viewport={{ once: true }}
           className="text-3xl md:text-4xl font-medium tracking-tight text-white mb-6 leading-tight"
         >
-          Engineered for Performance.
+          Technology Stack for Scalable Products.
         </motion.h2>
         
         <motion.p 
@@ -31,7 +31,7 @@ const Specialization = () => {
           transition={{ delay: 0.1 }}
           className="text-[17px] text-[#A1A1AA] max-w-2xl font-light leading-relaxed"
         >
-          We employ a curated suite of modern, high-performance technologies natively chosen for tight security, architectural resilience, and long-term maintainability.
+          We use proven technologies to build secure, fast, and maintainable digital products for global startups, SaaS teams, and growing online businesses.
         </motion.p>
       </div>
 
@@ -45,10 +45,10 @@ const Specialization = () => {
           className="flex flex-col gap-6"
         >
           <div className="border-b border-white/5 pb-4">
-            <h3 className="text-xl font-medium text-white tracking-wide">Core Full Stack</h3>
+            <h3 className="text-xl font-medium text-white tracking-wide">Core Web Engineering</h3>
           </div>
           <div className="flex flex-wrap gap-4">
-            {["React", "TypeScript", "Node.js"].map((tech) => (
+            {["React", "TypeScript", "Node.js", "Next.js"].map((tech) => (
               <span key={tech} className="px-5 py-2.5 rounded-lg bg-[#050505] border border-white/10 text-[#E4E4E7] text-[13px] font-mono tracking-widest uppercase hover:border-white/30 hover:bg-white/5 transition-all duration-300 cursor-default">
                 {tech}
               </span>
@@ -65,10 +65,10 @@ const Specialization = () => {
           className="flex flex-col gap-6"
         >
           <div className="border-b border-white/5 pb-4">
-            <h3 className="text-xl font-medium text-white tracking-wide">Data & Infrastructure</h3>
+            <h3 className="text-xl font-medium text-white tracking-wide">Backend, Data & Cloud</h3>
           </div>
           <div className="flex flex-wrap gap-4">
-            {["Python", "PostgreSQL", "AWS"].map((tech) => (
+            {["Python", "PostgreSQL", "AWS", "Docker"].map((tech) => (
               <span key={tech} className="px-5 py-2.5 rounded-lg bg-[#050505] border border-white/10 text-[#E4E4E7] text-[13px] font-mono tracking-widest uppercase hover:border-white/30 hover:bg-white/5 transition-all duration-300 cursor-default">
                 {tech}
               </span>

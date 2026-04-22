@@ -28,9 +28,9 @@ const Counter = ({ value, suffix = "" }: { value: number, suffix?: string }) => 
 
 const Impact = () => {
   const metrics = [
-    { value: 4, suffix: "+", label: "Years Engineering Experience" },
-    { value: 20, suffix: "+", label: "Digital Products Launched" },
-    { value: 5, suffix: "k+", label: "Concurrent Users Supported" }
+    { value: 4, suffix: "+", label: "Years in Software Consulting" },
+    { value: 20, suffix: "+", label: "Products Shipped for Clients" },
+    { value: 3, suffix: "+", label: "Primary Global Timezones Covered" }
   ];
 
   return (

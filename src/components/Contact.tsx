@@ -128,8 +128,8 @@ const SuccessOverlay: React.FC<{ name: string }> = ({ name }) => (
         Message received, {name.split(' ')[0]}.
       </h3>
       <p className="text-[#71717A] text-[15px] font-light leading-relaxed max-w-sm">
-        A confirmation has been dispatched to your inbox. We'll be in &nbsp;
-        <span className="text-white/60">priority contact</span> within 24 hours.
+        Thanks for reaching out. We'll review your request and send a clear next-step plan within &nbsp;
+        <span className="text-white/60">24 business hours</span>.
       </p>
     </div>
 
@@ -219,7 +219,7 @@ const Contact: React.FC = () => {
           >
             Start a conversation.
             <br className="block" />
-            <span className="text-[#555]">No pressure.</span>
+            <span className="text-[#555]">Global delivery, clear communication.</span>
           </motion.h2>
         </div>
 
@@ -230,8 +230,8 @@ const Contact: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-[17px] text-[#A1A1AA] max-w-md font-light leading-relaxed"
         >
-          Describe your project in plain language. We'll respond with a scoped
-          technical brief — fully typed, fully documented, no hourly surprises.
+          Share your goals, timelines, and current challenges. We will reply with
+          recommended scope, delivery approach, and a practical next step for your team.
         </motion.p>
       </div>
 
@@ -345,21 +345,21 @@ const Contact: React.FC = () => {
                 {/* Technical Description */}
                 <div>
                   <FieldLabel htmlFor="contact-description">
-                    Technical Description
+                    Project Goals & Requirements
                   </FieldLabel>
                   <textarea
                     id="contact-description"
                     name="description"
                     required
                     rows={5}
-                    placeholder="Describe your project, current tech stack, key challenges, and desired outcomes…"
+                    placeholder="Describe your product goals, current setup, key challenges, timeline, and expected outcomes..."
                     value={form.description}
                     onChange={handleChange}
                     className={inputBase}
                     disabled={isSending}
                   />
                   <p className="mt-2 text-[12px] text-[#A1A1AA] font-mono">
-                    Be as technical as you need. We read everything.
+                    Non-technical details are welcome. We can translate business needs into technical scope.
                   </p>
                 </div>
 
@@ -397,7 +397,7 @@ const Contact: React.FC = () => {
 
                 {/* Footer note */}
                 <p className="text-center text-[12px] text-[#A1A1AA] font-mono tracking-wide">
-                  We typically respond within 24 hours · All data handled privately.
+                  We typically respond within 24 business hours · Your information remains confidential.
                 </p>
               </motion.form>
             )}

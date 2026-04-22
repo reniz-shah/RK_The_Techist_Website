@@ -5,7 +5,7 @@ import { CheckCircle2, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-re
 const projects = [
   {
     name: "Real-Time Health Monitoring Platform",
-    description: "Built a scalable health monitoring platform that collects continuous sensor data via BLE devices and processes it using a FastAPI backend. Designed a real-time dashboard using React to visualize daily and weekly health insights.",
+    description: "Delivered a real-time health monitoring platform that ingests BLE sensor data, processes it with FastAPI, and visualizes trends in a React dashboard for faster clinical and operational decisions.",
     highlight: [
       "Implemented queue-based data processing using asynchronous architecture",
       "Designed API system handling high-frequency data uploads",
@@ -15,7 +15,7 @@ const projects = [
   },
   {
     name: "SaaS Onboarding & Task Management System",
-    description: "Developed a full-stack onboarding platform enabling HR teams to track pre-joining tasks of employees in real-time. Built using Angular frontend and Django backend with socket-based live updates.",
+    description: "Developed a full-stack onboarding system for HR teams to track pre-joining workflows in real-time, improving visibility, accountability, and onboarding consistency across distributed teams.",
     highlight: [
       "Real-time sync between HR and employee dashboards",
       "Role-based access for HR and new hires",
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     name: "Custom eCommerce Warranty Integration System",
-    description: "Built a custom warranty and add-on system for eCommerce platforms, allowing users to purchase protection plans alongside products. Integrated with cart systems and handled complex pricing logic.",
+    description: "Implemented a custom warranty and add-on purchase flow for eCommerce stores, improving checkout experience and enabling higher-value order opportunities.",
     highlight: [
       "Dynamic add-on selection system for product pages",
       "Fixed critical cart bugs affecting product quantity logic",
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     name: "Interactive Web Inspection & Debugging Tool",
-    description: "Created a web-based tool that allows users to load any external website and inspect UI elements. Built using React with a FastAPI backend to handle CORS and asset fetching.",
+    description: "Built a web inspection tool that lets teams load external pages, inspect UI elements, and extract frontend assets for rapid debugging and competitor analysis.",
     highlight: [
       "Enabled element-level inspection inside embedded iframe",
       "Extracted CSS, images, and metadata dynamically",
@@ -45,7 +45,7 @@ const projects = [
   },
   {
     name: "Scalable Backend System for File Processing",
-    description: "Designed a backend system that processes uploaded files asynchronously using queue listeners and scheduled cron jobs. The system calculates user metrics and uploads processed data to cloud storage.",
+    description: "Designed an asynchronous file-processing backend with queue listeners and scheduled jobs to improve throughput, reliability, and reporting consistency.",
     highlight: [
       "Built queue-based processing pipeline for large file handling",
       "Implemented cron jobs for periodic data computation",
@@ -55,7 +55,7 @@ const projects = [
   },
   {
     name: "High-Performance Webflow Optimization Project",
-    description: "Optimized a Webflow-based website to significantly improve performance scores and loading speed, focusing on desktop performance and user experience.",
+    description: "Optimized a Webflow website for speed, Core Web Vitals, and UX quality to support better SEO visibility and lower bounce rates.",
     highlight: [
       "Improved performance score to 90+",
       "Reduced unused CSS and JavaScript",
@@ -65,7 +65,7 @@ const projects = [
   },
   {
     name: "React-Based Dynamic Warranty Dashboard",
-    description: "Built a dynamic dashboard for managing warranty plans, allowing users to select categories, view plans, and complete purchase workflows. Integrated with backend APIs for real-time data.",
+    description: "Built a React dashboard for warranty operations with dynamic plans, guided purchase workflows, and API-driven real-time updates for better conversion flow control.",
     highlight: [
       "Created multi-step workflow for plan selection and checkout",
       "Built reusable React components for scalability",
@@ -142,7 +142,7 @@ const Projects = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-lg text-slate-400 max-w-2xl mx-auto"
         >
-          A selection of our recent technical achievements and digital solutions built for scalable growth.
+          Selected software projects delivered for international clients across SaaS, healthtech, eCommerce, and operations automation.
         </motion.p>
       </div>
 

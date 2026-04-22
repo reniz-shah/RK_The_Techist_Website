@@ -5,19 +5,19 @@ const services = [
   {
     title: "SaaS & Platform Development",
     tech: "MERN, Next.js",
-    description: "Architect robust, high-performance web applications that accelerate market launch and scale seamlessly with enterprise growth.",
+    description: "Build SaaS platforms that launch quickly, convert qualified traffic, and scale across regions with strong frontend performance and maintainable architecture.",
     icon: Layout,
   },
   {
     title: "Scalable Backend Engineering",
     tech: "Python, Microservices",
-    description: "Design resilient infrastructure and distributed systems to ensure maximum uptime, handle peak loads, and future-proof operations.",
+    description: "Engineer secure backend systems with resilient APIs, queue-based processing, and cloud-ready infrastructure to support global users and peak traffic.",
     icon: Server,
   },
   {
     title: "AI Agent & Automation Integration",
     tech: "Python, LLMs",
-    description: "Deploy intelligent workflows that automate complex tasks, significantly reduce operational overhead, and unlock new business efficiencies.",
+    description: "Integrate practical AI automation into operations, support, and internal workflows to reduce manual overhead and improve delivery velocity.",
     icon: Sparkles,
   }
 ];
@@ -45,7 +45,7 @@ const Services = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-4xl md:text-5xl font-medium tracking-tight text-white leading-tight"
           >
-            Built for scale. <br className="hidden md:block"/> Designed for business impact.
+            Built for global scale. <br className="hidden md:block"/> Designed for measurable growth.
           </motion.h2>
         </div>
         <motion.p
@@ -55,7 +55,7 @@ const Services = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-[17px] text-[#A1A1AA] max-w-md font-light leading-relaxed"
         >
-          We translate complex business requirements into elegant, high-throughput technical solutions that drive measurable ROI.
+          We provide software development services for startups and growth companies that need faster releases, stronger reliability, and clear technical ownership.
         </motion.p>
       </div>
 

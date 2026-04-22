@@ -29,7 +29,7 @@ const STEPS: ProcessStep[] = [
     title: 'Architectural Discovery',
     label: 'PHASE 01 — DISCOVERY',
     description:
-      'Before a single line of code is written, we invest deeply in understanding your domain. We produce exhaustive technical documentation — data-flow diagrams, API contracts, and typed domain models — ensuring every subsequent decision builds on a stable, fully-documented foundation.',
+      'Before implementation begins, we map your business goals, product constraints, and growth targets. This discovery phase aligns scope, architecture, and release priorities so execution stays predictable and ROI-focused.',
     highlights: [
       'Domain-driven design & bounded contexts',
       'Typed API contracts (OpenAPI / GraphQL SDL)',
@@ -43,7 +43,7 @@ const STEPS: ProcessStep[] = [
     title: 'Agile Development Sprints',
     label: 'PHASE 02 — BUILD',
     description:
-      'Every sprint ships rigorously type-safe TypeScript code. Strict compiler flags, exhaustive interface definitions, and zero-tolerance for implicit `any` are non-negotiable. Features are developed in tight feedback loops with inline documentation (TSDoc) baked in from day one.',
+      'We run focused weekly sprints with transparent updates, milestone demos, and production-ready code standards. This keeps delivery fast while reducing rework and technical debt.',
     highlights: [
       'TypeScript strict mode — zero implicit `any`',
       'TSDoc inline documentation on every public API',
@@ -57,7 +57,7 @@ const STEPS: ProcessStep[] = [
     title: 'Automated QA & Security',
     label: 'PHASE 03 — QUALITY',
     description:
-      'Quality is automated, not optional. Each commit passes through a layered pipeline: unit tests, integration tests, static analysis (ESLint + strict TypeScript), and SAST security scanning. Code quality metrics are tracked and ratcheted upward sprint over sprint.',
+      'Quality and security checks are integrated into every release cycle. Automated testing, static analysis, and security validation reduce regressions and protect your product as it scales.',
     highlights: [
       'Vitest / Jest with >80 % branch coverage',
       'ESLint + TypeScript strict linting rules',
@@ -71,7 +71,7 @@ const STEPS: ProcessStep[] = [
     title: 'CI/CD Deployment',
     label: 'PHASE 04 — SHIP',
     description:
-      'Deployments are fully automated, fully typed, and fully auditable. Every pipeline run enforces `tsc --noEmit` before a single artifact is built, guaranteeing that type regressions never reach production. Rollback strategies and blue/green switchovers are defined upfront.',
+      'We deploy through automated CI/CD pipelines with rollback safety, monitoring, and release visibility. Your team gets stable launches, faster iteration, and confidence in production.',
     highlights: [
       '`tsc --noEmit` gate on every CI run',
       'Zero-downtime blue/green deployments',
@@ -204,9 +204,9 @@ const Process: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-[17px] text-[#A1A1AA] max-w-md font-light leading-relaxed"
         >
-          A rigorous, TypeScript-first engineering process that prioritises code
-          quality, exhaustive documentation, and zero-compromise security from
-          discovery to deployment.
+          A transparent software delivery process built for international teams:
+          clear milestones, strong quality controls, and dependable releases from
+          discovery to production.
         </motion.p>
       </div>
 

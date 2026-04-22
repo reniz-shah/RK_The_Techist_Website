@@ -11,10 +11,10 @@ interface FooterLink {
 
 /* ─── Data ────────────────────────────────────────────────── */
 const expertiseLinks: FooterLink[] = [
-  { label: 'Full-Stack MERN Apps',       href: '#services',    title: 'Explore our Full-Stack MERN application development services' },
-  { label: 'Python AI Integration',       href: '#services',    title: 'Learn about our Python and AI/ML integration capabilities' },
-  { label: 'SaaS MVP Development',        href: '#services',    title: 'Discover our rapid SaaS MVP development process' },
-  { label: 'Fractional CTO Consulting',   href: '#contact',     title: 'Enquire about Fractional CTO consulting engagements' },
+  { label: 'Web App Development',         href: '#services',    title: 'Explore our web application development services' },
+  { label: 'SaaS Product Engineering',    href: '#services',    title: 'Learn about our SaaS product engineering capabilities' },
+  { label: 'Backend & API Development',   href: '#services',    title: 'Discover our backend and API development expertise' },
+  { label: 'AI Automation Integration',   href: '#services',    title: 'Explore our AI automation and integration services' },
 ];
 
 const agencyLinks: FooterLink[] = [
@@ -87,8 +87,8 @@ const Footer = () => {
 
             {/* Tagline */}
             <p className="text-sm text-slate-400 leading-relaxed max-w-[260px]">
-              An engineering-first development agency specialising in high-performance
-              MERN and Python ecosystems for global startups.
+              International software development agency helping startups and SaaS
+              teams build scalable web products with React, Node.js, and Python.
             </p>
 
             {/* Social icons */}
@@ -177,13 +177,13 @@ const Footer = () => {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
               </span>
               <span className="text-xs font-medium text-emerald-400 leading-none">
-                Active &amp; Accepting Projects
+                Accepting International Projects
               </span>
             </div>
 
             {/* Timezone availability */}
             <p className="text-sm text-slate-400 leading-relaxed">
-              Operating globally. Availability in{' '}
+              Remote-first delivery. Working hours aligned to{' '}
               <span className="text-slate-300 font-medium">IST</span>,{' '}
               <span className="text-slate-300 font-medium">EST</span>, and{' '}
               <span className="text-slate-300 font-medium">GMT</span> timezones.
@@ -195,7 +195,7 @@ const Footer = () => {
               title="Start a new project with RK The Techist"
               className="mt-1 inline-flex items-center gap-1.5 text-xs font-medium text-purple-400 hover:text-purple-300 transition-colors duration-150 group"
             >
-              Start a project
+              Start your project
               <svg
                 aria-hidden="true"
                 className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform duration-150"

@@ -7,7 +7,7 @@ const BookaCall = () => {
       <div className="container">
         <div className="">
           <h2 className="text-4xl md:text-5xl font-medium tracking-tight text-white leading-tight">
-            Book a Call with us
+            Book a Free Strategy Call
           </h2>
         </div>
         <div className="my-8">
