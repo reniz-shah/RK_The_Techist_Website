@@ -1,73 +1,100 @@
-# React + TypeScript + Vite
+# RK The Techist Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Marketing and lead-generation website for RK The Techist, built with React, TypeScript, Tailwind, Framer Motion, and Vite.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19 + TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Router DOM
+- EmailJS (contact form)
 
-## React Compiler
+## Local Development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Install dependencies:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Start dev server:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Build production bundle:
+
+```bash
+npm run build
+```
+
+Preview production build locally:
+
+```bash
+npm run preview
+```
+
+## Environment Variables
+
+Create a local `.env` file with:
+
+```bash
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_FOUNDER_TEMPLATE_ID=your_founder_template_id
+VITE_EMAILJS_CLIENT_TEMPLATE_ID=your_client_template_id
+```
+
+Notes:
+- The contact form requires EmailJS variables to send messages.
+- Only `VITE_*` variables are exposed to the frontend in Vite.
+
+## Deployment (Vercel)
+
+This project is configured for Vercel and client-side routing.
+
+### Required project settings in Vercel
+
+- Framework Preset: `Vite`
+- Build Command: `npm run build`
+- Output Directory: `dist`
+- Install Command: `npm install` (default is fine)
+
+### Required Environment Variables in Vercel
+
+Add these in **Project Settings -> Environment Variables**:
+
+- `VITE_EMAILJS_PUBLIC_KEY`
+- `VITE_EMAILJS_SERVICE_ID`
+- `VITE_EMAILJS_FOUNDER_TEMPLATE_ID`
+- `VITE_EMAILJS_CLIENT_TEMPLATE_ID`
+
+### SPA Routing Support
+
+`vercel.json` rewrites all paths to `index.html` so routes like:
+
+- `/services`
+- `/case-studies`
+- `/about`
+- `/contact`
+- `/privacy-policy`
+- `/terms`
+
+work correctly on direct refresh and deep links.
+
+## SEO Assets
+
+- Main metadata + JSON-LD schema: `index.html`
+- Crawler rules: `public/robots.txt`
+- Sitemap: `public/sitemap.xml`
+- LLM crawler context: `public/llms.txt`
+
+## Project Structure
+
+- `src/components/` reusable UI sections
+- `src/pages/` route pages
+- `src/App.tsx` route mapping + shared layout
+- `public/` static assets and SEO files
