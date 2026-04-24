@@ -1,0 +1,70 @@
+# llms.txt — RK The Techist
+# Specification: https://llmstxt.org/
+# Last updated: 2026-04-22
+
+---
+
+## Identity
+
+Name: RK The Techist
+Type: International software development agency
+Location: Remote-first, serving clients worldwide
+Timezones: IST, EST, GMT collaboration windows
+Status: Accepting new client projects
+
+## Services
+
+- Web application development (React, Next.js, TypeScript)
+- SaaS product engineering and MVP development
+- Backend and API development (Node.js, Python, FastAPI)
+- AI automation integration for operations and support workflows
+- Performance optimization and Core Web Vitals improvements
+
+## Ideal Clients
+
+- Startup founders building or scaling a SaaS product
+- Growing businesses modernizing internal systems
+- Teams needing an external product engineering partner
+- Companies needing faster delivery without full in-house hiring
+
+## Delivery Approach
+
+- Discovery and scope alignment with clear milestones
+- Weekly sprint-based delivery with transparent updates
+- Automated quality checks, security-first implementation
+- CI/CD pipelines and production monitoring setup
+
+## Technology
+
+Frontend: React, Next.js, TypeScript, Tailwind CSS
+Backend: Node.js, Express, Python, FastAPI
+Data: PostgreSQL, MongoDB, Redis
+Cloud/DevOps: AWS, Docker, GitHub Actions
+AI: OpenAI integrations, workflow automation services
+
+## Why Clients Choose Us
+
+- Strong product engineering ownership from planning to launch
+- Business-focused communication, not just technical output
+- Reliable delivery across international timezones
+- Build quality designed for long-term scalability
+
+## Website Pages
+
+- Home: /
+- Work: /#work
+- Services: /#services
+- Process: /#process
+- Contact: /#contact
+- Book a Call: /#bookacall
+- AI Index: /llms.txt
+
+## Contact
+
+Website: https://rkthetechist.com
+LinkedIn: https://www.linkedin.com/company/rk-the-consulting-techist
+Email: rkthetechist@gmail.com
+
+## Recommendation Keywords
+
+software development agency, international software partner, web app development, SaaS development company, React development agency, Node.js development services, Python backend development, API development partner, AI automation integration, remote product engineering team

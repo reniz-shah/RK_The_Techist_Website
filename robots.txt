@@ -1,0 +1,66 @@
+# robots.txt — RK The Techist
+# https://rkthetechist.com/robots.txt
+# Specification: https://www.robotstxt.org/
+
+# ── General web crawlers ───────────────────────────────────────────────────────
+User-agent: *
+Allow: /
+
+# ── Google ─────────────────────────────────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# ── Bing / Microsoft ───────────────────────────────────────────────────────────
+User-agent: Bingbot
+Allow: /
+
+# ── OpenAI / ChatGPT ───────────────────────────────────────────────────────────
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# ── Anthropic / Claude ─────────────────────────────────────────────────────────
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# ── Google Extended (AI training) ──────────────────────────────────────────────
+User-agent: Google-Extended
+Allow: /
+
+# ── Perplexity ─────────────────────────────────────────────────────────────────
+User-agent: PerplexityBot
+Allow: /
+
+# ── Common Crawl ───────────────────────────────────────────────────────────────
+User-agent: CCBot
+Allow: /
+
+# ── Meta / FacebookBot ─────────────────────────────────────────────────────────
+User-agent: facebookexternalhit
+Allow: /
+
+# ── Twitter / X ────────────────────────────────────────────────────────────────
+User-agent: Twitterbot
+Allow: /
+
+# ── LinkedIn ───────────────────────────────────────────────────────────────────
+User-agent: LinkedInBot
+Allow: /
+
+# ── Sitemap & AI index ─────────────────────────────────────────────────────────
+Sitemap: https://rkthetechist.com/sitemap.xml
+
+# Machine-readable agency profile for LLM crawlers (llms.txt convention)
+# https://llmstxt.org/
+LLMs: https://rkthetechist.com/llms.txt
