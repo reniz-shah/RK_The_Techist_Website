@@ -1,6 +1,7 @@
 
 import { motion } from 'framer-motion';
 import { getImgPath } from '../utils/path';
+import { Link } from 'react-router-dom';
 
 /* ─── Types ───────────────────────────────────────────────── */
 interface FooterLink {
@@ -11,16 +12,16 @@ interface FooterLink {
 
 /* ─── Data ────────────────────────────────────────────────── */
 const expertiseLinks: FooterLink[] = [
-  { label: 'Web App Development',         href: '#services',    title: 'Explore our web application development services' },
-  { label: 'SaaS Product Engineering',    href: '#services',    title: 'Learn about our SaaS product engineering capabilities' },
-  { label: 'Backend & API Development',   href: '#services',    title: 'Discover our backend and API development expertise' },
-  { label: 'AI Automation Integration',   href: '#services',    title: 'Explore our AI automation and integration services' },
+  { label: 'Web App Development',         href: '/services',    title: 'Explore our web application development services' },
+  { label: 'SaaS Product Engineering',    href: '/services',    title: 'Learn about our SaaS product engineering capabilities' },
+  { label: 'Backend & API Development',   href: '/services',    title: 'Discover our backend and API development expertise' },
+  { label: 'AI Automation Integration',   href: '/services',    title: 'Explore our AI automation and integration services' },
 ];
 
 const agencyLinks: FooterLink[] = [
-  { label: 'Our Projects',        href: '#work', title: 'Browse our portfolio of client projects' },
-  { label: 'Engineering Process', href: '#process',  title: 'See our structured agile engineering process' },
-  { label: 'Contact Us',          href: '#contact',  title: 'Get in touch to start a new project' },
+  { label: 'Case Studies',        href: '/case-studies', title: 'Browse our portfolio of client projects' },
+  { label: 'About Us', href: '/about',  title: 'Learn more about RK The Techist' },
+  { label: 'Contact Us',          href: '/contact',  title: 'Get in touch to start a new project' },
 ];
 
 /* ─── Sub-components ──────────────────────────────────────── */
@@ -75,7 +76,7 @@ const Footer = () => {
           {/* ── Col 1 · Identity ── */}
           <motion.div variants={itemVariants} className="flex flex-col gap-6">
             {/* Logo */}
-            <a href="./" title="RK The Techist - Home" className="inline-block w-fit">
+            <Link to="/" title="RK The Techist - Home" className="inline-block w-fit">
               <img
                 src={getImgPath('/images/logo/white-RK_logo.png')}
                 alt="RK The Techist agency logo"
@@ -83,7 +84,7 @@ const Footer = () => {
                 loading="lazy"
                 decoding="async"
               />
-            </a>
+            </Link>
 
             {/* Tagline */}
             <p className="text-sm text-slate-400 leading-relaxed max-w-[260px]">
@@ -115,8 +116,8 @@ const Footer = () => {
               <ul className="flex flex-col gap-3">
                 {expertiseLinks.map((link) => (
                   <li key={link.label}>
-                    <a
-                      href={link.href}
+                    <Link
+                      to={link.href}
                       title={link.title}
                       className="text-sm text-slate-400 hover:text-white transition-colors duration-150 group flex items-center gap-2"
                     >
@@ -125,7 +126,7 @@ const Footer = () => {
                         className="block w-1 h-1 rounded-full bg-purple-500/60 group-hover:bg-purple-400 transition-colors duration-150 shrink-0"
                       />
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -141,8 +142,8 @@ const Footer = () => {
               <ul className="flex flex-col gap-3">
                 {agencyLinks.map((link) => (
                   <li key={link.label}>
-                    <a
-                      href={link.href}
+                    <Link
+                      to={link.href}
                       title={link.title}
                       className="text-sm text-slate-400 hover:text-white transition-colors duration-150 group flex items-center gap-2"
                     >
@@ -151,7 +152,7 @@ const Footer = () => {
                         className="block w-1 h-1 rounded-full bg-purple-500/60 group-hover:bg-purple-400 transition-colors duration-150 shrink-0"
                       />
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -190,8 +191,8 @@ const Footer = () => {
             </p>
 
             {/* Quick contact CTA */}
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               title="Start a new project with RK The Techist"
               className="mt-1 inline-flex items-center gap-1.5 text-xs font-medium text-purple-400 hover:text-purple-300 transition-colors duration-150 group"
             >
@@ -206,7 +207,7 @@ const Footer = () => {
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
-            </a>
+            </Link>
           </motion.div>
 
         </motion.div>
@@ -228,8 +229,22 @@ const Footer = () => {
 
           {/* Legal / AI-crawler links */}
           <nav aria-label="Legal and AI crawler links" className="flex items-center gap-5">
+          <Link
+              to="/privacy-policy"
+              title="Read our privacy policy"
+              className="text-xs text-slate-600 hover:text-slate-400 transition-colors duration-150"
+            >
+              Privacy
+            </Link>
+          <Link
+              to="/terms"
+              title="Read our terms of service"
+              className="text-xs text-slate-600 hover:text-slate-400 transition-colors duration-150"
+            >
+              Terms
+            </Link>
           <a
-              href="./llms.txt"
+              href="/llms.txt"
               title="Plain-text site index for AI language model crawlers"
               rel="nofollow"
               className="text-xs text-slate-600 hover:text-slate-400 transition-colors duration-150 flex items-center gap-1"
